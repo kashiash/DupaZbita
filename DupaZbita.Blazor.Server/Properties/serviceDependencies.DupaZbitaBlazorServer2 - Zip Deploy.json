@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/DupaZbitaBlazorServer2/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsConnectionString_222471BF1E",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/maindemoblazorserverdbserverne/databases/DupaZbita.Blazor.Server_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:ConnectionString",
+      "dynamicId": null
+    },
+    "signalr1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/DupaZbitaBlazorServer2/providers/Microsoft.ServiceLinker/linkers/AzureSignalRConnectionString_8D3175B916",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.SignalRService/SignalR/DupaZbitaBlazorServer",
+      "type": "signalr.azure",
+      "connectionId": "Azure:SignalR:ConnectionString",
+      "dynamicId": null
+    }
+  }
+}
