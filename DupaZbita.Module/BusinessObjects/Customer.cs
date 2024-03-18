@@ -16,6 +16,8 @@ namespace Firma.Module.BusinessObjects
         { }
 
 
+        string extra2;
+        string extra1;
         string customerType;
         SilosType silosType;
         string regon;
@@ -137,6 +139,22 @@ namespace Firma.Module.BusinessObjects
         //    }
         //}
 
+
+
+        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        public string Extra1
+        {
+            get => extra1;
+            set => SetPropertyValue(nameof(Extra1), ref extra1, value);
+        }
+
+
+        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        public string Extra2
+        {
+            get => extra2;
+            set => SetPropertyValue(nameof(Extra2), ref extra2, value);
+        }
         public SilosType SilosType
         {
             get => silosType;
